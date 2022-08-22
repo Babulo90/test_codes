@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\title{Tables, Floats and the Tabular enviroment}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Let`s learn to make tables.
+
+\subsection{The Tabular Enviroment}
+
+this is the tabular enviroment for the table shown for the Table ~\ref{tab:grades}
+\vspace{.5cm}
+%\smallskip(other methode of creating space)
+%\bigskip(other methodes of creating space)
+
+\begin{tabular}{|c||c|} %cc for center
+	\hline
+	Name & Your Name Here \\
+	\hline
+	Subject & Writing with \LaTeX \\
+	\hline
+	Grade & A+ \\
+	\hline
+\end{tabular}
+\subsection{Floats Table}
+
+\begin{table}[htbp]
+	\caption{My Grade Book}
+	\begin{center}
+		\begin{tabular}{|c||c|} %cc for center
+			\hline
+			Name & Your Name Here \\
+			\hline
+			Subject & Writing with \LaTeX \\
+			\hline
+			Grade & A+ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{tab:grades}
+\end{table}
+
+\subsection{References}
+
+You can see my grades in Table~\ref{tab:grades}.
+
+\section{Conclusion}
+
+Now I know how to ctreate basic tables.
+\end{document}

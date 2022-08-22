@@ -1,0 +1,57 @@
+\documentclass{proc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\title{Including Graphics}
+
+\author{Tamal Routh}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Picture Books Are just \emph{Better}
+
+
+\subsection{Including Graphics}
+
+This is a banana in a JPG.
+
+\bigskip
+
+\includegraphics[width=2in]{banana.jpg}  %will have to put jpg file in the same folder as the document is saved in.
+
+This is a fish, in a PNG
+
+\includegraphics[width=2in]{fish.png}
+
+\subsection{Float:Figure Enviroment}
+
+In my article, I want to include a JPG image of a banana. You can see this image in Figure \ref{fg:Banana}
+`
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{banana.jpg}
+\caption{This is a Banana}
+\label{fg:Banana}
+\end{center}
+\end{figure}
+
+In my Article . I want to include a PNG image of a chart that looks like a fish. You can see this image in figure-\ref{fg:Fish}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=2in]{fish.png}
+\caption{This is a chart that looks like a fish}
+\label{fg:Fish}
+\end{center}
+\end{figure}
+
+\section{Conclusion}
+
+Adding images to an article.
+
+\end{document}
