@@ -1,0 +1,72 @@
+\documentclass{proc}
+\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+\usepackage{graphicx}
+\graphicspath{{grapics/}}
+\usepackage{caption, subscription}
+
+
+%opening
+\title{More On Tables And Graphics}
+\author{Tamal Routh}
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Here we'll look at more table and graphics formatting.
+
+\subsection{More On Tables}
+
+Table~\ref{tab:wrapping} uses tesxt wrapping in the last column span.
+
+\begin{table}[htdp]
+ \caption{Spanning rows and columns}
+ \begin{center}
+  \begin{tabular}[|l|c|c|]
+   \hline
+   & multicolumn{2}{c|}{Ranges}\\ & X & Y\\
+   \hline
+   \multirow{3}{*}{Hot}& 7 & 9\\
+   & 5 & 8\\
+   & 6 & 7\\
+   \hline
+   \multirow{3}{*}{Cold}& 4 & 7\\
+   & 2 & 9\\
+   & 3 & 5\\
+   \hline
+   
+  \end{tabular}
+
+ \end{center}
+\label{tab:multi}
+\end{table}%
+
+\subsection(More Details)
+
+\begin{figure}[htbp]
+\centring
+\begin{subfigure}[b]{0.2\textwidth}
+  \centring
+  \includegraphics[scale=0.5]{paper.png}
+  \caption{Beginning}
+  \label{fig:paper}
+\end{subfigure}%
+\begin{subfigure}[b]{0.2\textwidth}
+  \centring
+  \includegraphics[scale=0.5]{page.png}
+  \caption{End}
+  \label{fig:page}
+\end{subfigure}%
+\caption{The process}
+\label{fig:subs}
+\end{figure}
+
+\section{Conclusion}
+
+Now I know more about tables and graphics.
+
+\end{document}
